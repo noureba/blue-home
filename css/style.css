@@ -125,21 +125,21 @@ body {
   color: white;
   padding: 50px 0;
 }
-.ServicesSection h2{
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
+.ServicesSection h2 {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
 }
-.ServicesSection h2::before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 130px;
-    height: 3px;
-    background-color: #3cefff;
-    margin: 0 auto;
-    right: 45%;
-    top: 60px;
+.ServicesSection h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 3px;
+  background-color: #3cefff;
+  margin: 0 auto;
+  right: 45%;
+  top: 60px;
 }
 .services {
   display: flex;
@@ -150,162 +150,164 @@ body {
 }
 .service {
   max-width: 280px;
-  border : 1px solid #3cefff;
+  border: 1px solid #3cefff;
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
-.service:hover{
-    border:  1px solid rgb(0, 80, 253);
+.service:hover {
+  border: 1px solid rgb(0, 80, 253);
 }
 
-.service ion-icon{
-    text-align: center;
-    font-size: 50px;
-    color: #3cefff;
-    text-align: center;
-    border : 1px solid #3cefff;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 20px auto;
+.service ion-icon {
+  text-align: center;
+  font-size: 50px;
+  color: #3cefff;
+  text-align: center;
+  border: 1px solid #3cefff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px auto;
 }
-.service ion-icon:hover{
-    border:  1px solid rgb(0, 26, 80);
+.service ion-icon:hover {
+  border: 1px solid rgb(0, 26, 80);
 }
-.service h3{
-    margin: 10px 0;
+.service h3 {
+  margin: 10px 0;
 }
 
-.about{
-    background: rgb(255, 255, 255);
-    color: rgb(22, 22, 22);
+.about {
+  background: rgb(255, 255, 255);
+  color: rgb(22, 22, 22);
 }
-.aboutContent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
 }
 .images {
-    position: relative;
+  position: relative;
 }
-.images div{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(0, 26, 80);
+.images div {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(0, 26, 80);
 }
-.images img{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
+.images img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
-.textAbout{
-    max-width: 500px;
-    padding-left: 50px;
+.textAbout {
+  max-width: 500px;
+  padding-left: 50px;
 }
-.textAbout p{
-    padding: 20px;
+.textAbout p {
+  padding: 20px;
 }
-.contact{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.contactContent{
-    max-width: 500px;
-    padding: 50px 0;
-    border-right: 3px solid #3cefff;
+.contactContent {
+  max-width: 500px;
+  padding: 50px 0;
+  border-right: 3px solid #3cefff;
 }
-.contactInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 }
-.contactInfo ion-icon{
-    font-size: 30px;
-    color: #3cefff;
-    border: 1px solid #3cefff;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
+.contactInfo ion-icon {
+  font-size: 30px;
+  color: #3cefff;
+  border: 1px solid #3cefff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
 }
-.form{
-    width: 500px;
-    padding: 20px;
+.form {
+  width: 500px;
+  padding: 20px;
 }
-.form form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.form form input{
-    width: 400px;
-    height: 40px;
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 16px;
-    outline: none;
+.form form input {
+  width: 400px;
+  height: 40px;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
 }
-.form form input:last-child{
-    width: 100px;
-    height: 40px;
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #3cefff;
-    color: #002225;
-    border: none;
-    cursor: pointer;
+.form form input:last-child {
+  width: 100px;
+  height: 40px;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3cefff;
+  color: #002225;
+  border: none;
+  cursor: pointer;
 }
-.form form textarea{
-    width: 400px;
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 16px;
-    outline: none;
+.form form textarea {
+  width: 400px;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
 }
-.footer{
-    padding: 30px 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+.footer {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-.footerContent{
-    max-width: 400px;
+.footerContent {
+  max-width: 400px;
+  margin: 20px;
 }
-.footerContent h2{
-    margin: 20px 0;
+.footerContent h2 {
+  margin: 20px 0;
 }
-.footerMenu{
-    display: flex;
-    flex-direction: column;
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
-.footerMenu a{
-    text-decoration: none;
-    color: black;
-    margin: 10px 0;
+.footerMenu a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  margin: 10px 0;
 }
-.footerMenu a:hover{
-    text-decoration: none;
-    color: rgb(0, 26, 80);
-    margin: 10px 0;
+.footerMenu a:hover {
+  text-decoration: none;
+  color: rgb(0, 26, 80);
+  margin: 10px 0;
 }
-.copyright{
-    background-color: rgb(0, 26, 80);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.copyright {
+  background-color: rgb(0, 26, 80);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media (max-width: 900px) {
@@ -316,38 +318,38 @@ body {
   .menu {
     padding: 10px 0;
   }
-  .service{
-      max-width: 100%;
+  .service {
+    max-width: 100%;
   }
-  .textAbout{
-      padding: 30px;
+  .textAbout {
+    padding: 30px;
   }
-  .textAbout p{
-        padding: 10px;
+  .textAbout p {
+    padding: 10px;
   }
-  .ServicesSection h2::before{
+  .ServicesSection h2::before {
     width: 100px;
     right: 40%;
-}
-.contactContent{
+  }
+  .contactContent {
     border-right: none;
     padding: 20px;
-}
-.images div{
+  }
+  .images div {
     width: 300px;
     height: 300px;
-}
-.images img{
+  }
+  .images img {
     width: 300px;
     height: 300px;
-}
-.form form input{
+  }
+  .form form input {
     width: 350px;
-
-}
-.form form textarea{
+  }
+  .form form textarea {
     width: 350px;
-
-}
-
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
