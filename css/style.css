@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1300px;
+  margin: auto;
+}
+.firstView {
+  background-image: url("../img/bluehome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.view {
+  background: radial-gradient(rgb(255, 0, 0, 0), rgb(0, 26, 80));
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar h1 a {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+.menu a:hover {
+  color: #3cefff;
+}
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.menu a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.content {
+  max-width: 500px;
+  color: white;
+  padding: 165px 20px;
+}
+.content h1 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.content p {
+  margin-top: 30px;
+  word-wrap: break-word;
+  line-height: 20px;
+}
+
+.content button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+  padding: 15px 25px;
+  outline: none;
+  border: none;
+  background-color: #3cefff;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  margin-top: 30px;
+}
+.content button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #002225;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+.content button:hover {
+  cursor: pointer;
+  color: #fdfdfd;
+}
+
+.content button:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(30, 30, 30);
+}
+.ServicesSection {
+  background: rgb(0, 26, 80);
+  color: white;
+  padding: 50px 0;
+}
+.ServicesSection h2{
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+.ServicesSection h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    background-color: #3cefff;
+    margin: 0 auto;
+    right: 45%;
+    top: 60px;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.service {
+  max-width: 280px;
+  border : 1px solid #3cefff;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.service:hover{
+    border:  1px solid rgb(0, 80, 253);
+}
+
+.service ion-icon{
+    text-align: center;
+    font-size: 50px;
+    color: #3cefff;
+    text-align: center;
+    border : 1px solid #3cefff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px auto;
+}
+.service ion-icon:hover{
+    border:  1px solid rgb(0, 26, 80);
+}
+.service h3{
+    margin: 10px 0;
+}
+
+.about{
+    background: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+}
+.aboutContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.images {
+    position: relative;
+}
+.images div{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 26, 80);
+}
+.images img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.textAbout{
+    max-width: 500px;
+    padding-left: 50px;
+}
+.textAbout p{
+    padding: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contactContent{
+    max-width: 500px;
+    padding: 50px 0;
+    border-right: 3px solid #3cefff;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.contactInfo ion-icon{
+    font-size: 30px;
+    color: #3cefff;
+    border: 1px solid #3cefff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+.form{
+    width: 500px;
+    padding: 20px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form form input{
+    width: 400px;
+    height: 40px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.form form input:last-child{
+    width: 100px;
+    height: 40px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3cefff;
+    color: #002225;
+    border: none;
+    cursor: pointer;
+}
+.form form textarea{
+    width: 400px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.footer{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footerContent{
+    max-width: 400px;
+}
+.footerContent h2{
+    margin: 20px 0;
+}
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+}
+.footerMenu a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+}
+.footerMenu a:hover{
+    text-decoration: none;
+    color: rgb(0, 26, 80);
+    margin: 10px 0;
+}
+.copyright{
+    background-color: rgb(0, 26, 80);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    padding: 10px 0;
+  }
+  .service{
+      max-width: 100%;
+  }
+  .textAbout{
+      padding: 30px;
+  }
+  .textAbout p{
+        padding: 10px;
+  }
+  .ServicesSection h2::before{
+    width: 100px;
+    right: 40%;
+}
+.contactContent{
+    border-right: none;
+    padding: 20px;
+}
+.images div{
+    width: 300px;
+    height: 300px;
+}
+.images img{
+    width: 300px;
+    height: 300px;
+}
+.form form input{
+    width: 350px;
+
+}
+.form form textarea{
+    width: 350px;
+
+}
+
+}
